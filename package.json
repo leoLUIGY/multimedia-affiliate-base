@@ -1,0 +1,25 @@
+{
+  "name": "multimedia-affiliate-base",
+  "version": "1.0.0",
+  "description": "Este repositório serve como base para a criação de um site de **trasncrição de vídeo** com múltiplas fontes de **monetização**. O objetivo é fornecer um template funcional para implementar **AdSense**, **encurtadores de links pagos** e **links de afiliados**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoLUIGY/multimedia-affiliate-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoLUIGY/multimedia-affiliate-base/issues"
+  },
+  "homepage": "https://github.com/leoLUIGY/multimedia-affiliate-base#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "ytdl-core": "^4.11.5"
+  }
+}

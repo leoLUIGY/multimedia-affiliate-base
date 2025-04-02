@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./script/script.js"></script>
+    
     <title>Midia Downloand</title>
 </head>
 <body>
     <main class="container">
-        <h1>Download Music</h1>
+        <h1>Transcribe videos</h1>
         <div class="container__search">
-            <input type="search" class="container__search__music" placeholder="Pesquise sua musica">
-            <button type="button" onclick="searchMusic()">Search</button>
+            <input id="search-input" type="search" class="container__search__music" placeholder="Pesquise sua musica">
+            <button id="search-music"type="button" onclick="searchMusic()">Search</button>
         </div>
 
         <section class="container__video">
-            <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            <iframe width="420" height="315" id="video-youtube"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"  frameborder="0" allowfullscreen >
             </iframe>
             <div class="container__video__buttons">
 
@@ -25,5 +25,7 @@
             </div>
         </section>
     </main>
+
+    <script src="./script/script.js" ></script>
 </body>
 </html>
