@@ -14,8 +14,6 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-
-
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../public')));
 

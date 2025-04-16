@@ -8,17 +8,21 @@
     <title>Midia Downloand</title>
 </head>
 <body>
+
     <main class="container">
         <h1>Transcribe videos</h1>
         <div class="container__search">
             <input id="search-input" type="search" class="container__search__music" placeholder="Pesquise sua musica">
-            <button id="search-music"type="button" onclick="searchMusic()">Search</button>
+            <button id="search-music"type="button">Search</button>
         </div>
 
         <section class="container__video">
             <iframe width="420" height="315" id="video-youtube"
             src="https://www.youtube.com/embed/tgbNymZ7vqY"  frameborder="0" allowfullscreen >
             </iframe>
+            <div id="transcription-area">
+
+            </div>
             <div class="container__video__buttons">
 
                 <button id="transcribe">Transcrever</button>
@@ -26,6 +30,6 @@
         </section>
     </main>
 
-    <script type="module" src="../script/UI.js" ></script>
+    <script type="module" src="./UI.js" ></script>
 </body>
 </html>
