@@ -23,7 +23,7 @@ function searchMusic()
 function getAudio(videoUrl) {
     if (!videoUrl) return;
 
-    fetch('/transcribe', {
+    fetch('/api/transcribe', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -33,14 +33,15 @@ function getAudio(videoUrl) {
     .then(response => response.json())
     .then(data => {
         console.log("Transcrição:", data.transcription);
-        transcriptionArea.innerHTML = data.transcription;
-        //alert("Transcrição:\n\n" + data.transcription);
+        const transcriptionArea = document.getElementById('transcriptionArea');
+        transcriptionArea.innerHTML = `<p>${data.transcription}</p>`;
     })
     .catch(error => {
         console.error("Erro ao transcrever:", error);
         alert("Erro ao transcrever o vídeo.");
     });
 }
+
 
 
 buttonSearchMusic.addEventListener('click', () =>{
@@ -51,7 +52,7 @@ buttonTranscribe.addEventListener('click', () =>
 {
     if(originalAudio){
         getAudio( originalAudio);
-        originalAudio = '';
+        //originalAudio = '';
     }
 })
 
