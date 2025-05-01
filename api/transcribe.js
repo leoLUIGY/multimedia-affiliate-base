@@ -1,4 +1,5 @@
-import { exec } from 'youtube-dl-exec';
+import pkg from 'youtube-dl-exec';
+const { exec } = pkg;
 import fs from 'fs';
 import { OpenAI } from 'openai';
 import path from 'path';
